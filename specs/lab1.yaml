@@ -1,0 +1,8 @@
+---
+assignment: lab1
+
+compilers:
+
+files:
+  - [ reverse.c ]
+  - [ table.c ]
