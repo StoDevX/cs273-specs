@@ -6,3 +6,4 @@ compilers:
 files:
   - [ reverse.c ]
   - [ table.c ]
+  - [ table.c ]
