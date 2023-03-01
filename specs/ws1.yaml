@@ -1,0 +1,22 @@
+# S23
+---
+assignment: ws1
+
+compilers:
+  - &c 'gcc $@ -o $@.exec'
+
+files:
+  - file: hello.txt
+    alternates: ../hw1/hello.txt
+  - file: reverse.c
+    alternates: ../hw1/reverse.c
+    commands: *c
+    tests: $@.exec a b c d e
+  - file: forward.c
+    alternates: ../hw1/forward.x
+    commands: *c
+    tests: $@.exec a b c d e
+  - file: forward2.c
+    alternates: ../hw1/forward2.c
+    commands: *c
+    tests: $@.exec a b c d e
