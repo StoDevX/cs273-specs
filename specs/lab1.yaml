@@ -1,8 +1,31 @@
+# S23
 ---
 assignment: lab1
 
 compilers:
+  - &c 'gcc $@ -o $@.exec'
 
 files:
-  - [ reverse.c ]
-  - [ table.c ]
+  - file: malloc_test.c
+    commands: *c
+    tests: echo -e "testing" | $@.exec
+  - file: revinput.c
+    commands: *c
+    tests: echo -e "The cat\n  in the hat." | $@.exec
+  - file: getline_test.c
+    commands: *c
+    tests: 
+      - echo -e "hello" | $@.exec
+      - echo -e "abcdefghij" | $@.exec
+      - echo -e "this line has more than 10 characters" | $@.exec
+  - file: get_token_test.c
+    commands: *c
+    tests: 
+      - echo -e "  first second\n" | $@.exec
+      - echo -e "\n" | $@.exec
+  - file: parse.c
+    commands: *c
+    tests: 
+      - echo -e "  first second\n" | $@.exec
+      - echo -e "\n" | $@.exec
+      - echo -e "too many tokens for this assignment parser.\n" | $@.exec

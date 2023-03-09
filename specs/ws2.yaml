@@ -1,0 +1,27 @@
+# S23
+---
+assignment: ws2
+
+compilers:
+  - &c 'gcc $@ -o $@.exec'
+
+files:
+  - file: try_mkdir.c
+    commands: *c
+    tests: 
+      - $@.exec testdir 755
+      - $@.exec testdir 755
+  - file: try_rmdir.c
+    commands: *c
+    tests: 
+      - $@.exec testdir
+      - $@.exec testdir
+  - file: file.txt
+  - file: file_test.c
+    commands: *c
+    tests: 
+      - $@.exec file.txt
+      - $@.exec test.txt
+
+inputs:
+  - file: test.txt

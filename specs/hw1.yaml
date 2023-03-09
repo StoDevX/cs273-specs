@@ -1,13 +1,12 @@
 # S23
 ---
-assignment: ws1
+assignment: hw1
 
 compilers:
   - &c 'gcc $@ -o $@.exec'
 
 files:
   - file: hello.txt
-    alternates: ../hw1/hello.txt
   - file: reverse.c
     commands: *c
     tests: $@.exec a b c d e
