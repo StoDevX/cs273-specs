@@ -6,4 +6,5 @@ compilers:
   - &c 'gcc $@ -o $@.exec'
 
 files:
+  - file: try_pthreads.c
   - file: try_pthreads2.c
