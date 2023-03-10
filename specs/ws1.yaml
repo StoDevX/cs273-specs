@@ -7,7 +7,6 @@ compilers:
 
 files:
   - file: hello.txt
-    alternates: ../hw1/hello.txt
   - file: reverse.c
     commands: *c
     tests: $@.exec a b c d e

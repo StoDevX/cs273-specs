@@ -1,0 +1,9 @@
+# S23
+---
+assignment: ws10
+
+compilers:
+  - &c 'gcc $@ -o $@.exec'
+
+files:
+  - file: try_pthreads2.c
