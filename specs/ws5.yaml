@@ -1,0 +1,11 @@
+# S23
+---
+assignment: ws5
+
+compilers:
+  - &c 'gcc $@ -o $@.exec'
+
+files:
+  - file: signal.sh
+    options:
+      truncate_contents: 5
