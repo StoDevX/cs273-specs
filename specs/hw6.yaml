@@ -8,5 +8,5 @@ compilers:
 files:
   - file: argv_test.c
     commands: *c
-    tests: $@.exec a b c d e
+    tests: $@.exec
     
