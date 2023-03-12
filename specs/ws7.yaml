@@ -8,7 +8,7 @@ compilers:
 files:
   - file: redir.c
     commands: *c
-    tests: echo -e "execve_testR.c" | $@.exec 'e.*e'
+    tests: echo execve_testR.c | $@.exec 'e.*e'
   - file: redir2.c
     commands: *c
 

@@ -9,8 +9,8 @@ files:
   - file: pipe_test.c
     commands: *c
     tests: 
-      - echo -e "Hello!!" | $@.exec
-      - echo -e "Another test" | $@.exec
+      - echo Hello!! | $@.exec
+      - echo Another test | $@.exec
   - file: pipeline_test.c
     commands: *c
     tests: $@.exec
