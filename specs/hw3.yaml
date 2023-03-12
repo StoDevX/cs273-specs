@@ -1,0 +1,41 @@
+# S23
+---
+assignment: ws3
+
+compilers:
+  - &c 'gcc $@ -o $@.exec'
+
+files:
+  - file: try_getpid.c
+    commands: *c
+    tests: $@.exec
+  - file: try_getppid.c
+    commands: *c
+    tests: $@.exec
+  - file: myfile.txt
+    tests: cat $@.exec
+  - file: myfile2.txt
+    tests: cat $@.exec
+  - file: read_test.c
+    commands: *c
+    tests: $@.exec
+  - file: write_test.c
+    commands: *c
+    tests: $@.exec
+  - file: try_lseek.c
+    commands: *c
+    tests: $@.exec
+  - file: fork_test.c
+    commands: *c
+    tests: $@.exec
+  - file: fork_test2.c
+    commands: *c
+    tests: $@.exec
+  - file: execve_test.c
+    commands: *c
+    tests: $@.exec -l
+  - file: execve_test2.c
+    commands: *c
+    tests: $@.exec status .
+  - file: execve_error1.c
+  - file: execve_error2.c

@@ -1,0 +1,16 @@
+# S23
+---
+assignment: ws7
+
+compilers:
+  - &c 'gcc $@ -o $@.exec'
+
+files:
+  - file: redir.c
+    commands: *c
+    tests: echo -e "execve_testR.c" | $@.exec 'e.*e'
+  - file: redir2.c
+    commands: *c
+
+supporting:
+  - file: execve_testR.c

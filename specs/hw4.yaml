@@ -1,0 +1,24 @@
+# S23
+---
+assignment: ws4
+
+compilers:
+  - &c 'gcc $@ -o $@.exec'
+
+files:
+  - file: dup_test.c
+    commands: *c
+    tests: $@.exec
+  - file: dup2_test.c
+    commands: *c
+    tests: $@.exec
+  - file: rearange.c
+    commands: *c
+    tests: 
+      - $@.exec
+      - $@.exec -l
+  - file: ls.out
+    tests: cat $@.exec
+  - file: wait_test.c
+    commands: *c
+    tests: $@.exec
