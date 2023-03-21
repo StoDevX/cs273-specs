@@ -1,0 +1,9 @@
+# S23
+---
+assignment: ws12
+
+compilers:
+  - &c 'gcc $@ -o $@.exec'
+
+files:
+  - file: pc_sem.c

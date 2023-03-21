@@ -1,0 +1,12 @@
+# S23
+---
+assignment: ws14
+
+compilers:
+  - &c 'gcc $@ -o $@.exec'
+
+files:
+  - file: sender.c
+  - file: receiver.c
+  - file: sender2.c
+  - file: receiver2.c
