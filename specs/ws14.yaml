@@ -7,6 +7,10 @@ compilers:
 
 files:
   - file: sender.c
+    commands: *c
   - file: receiver.c
+    commands: *c
   - file: sender2.c
+    commands: *c
   - file: receiver2.c
+    commands: *c

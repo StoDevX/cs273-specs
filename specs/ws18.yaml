@@ -1,0 +1,14 @@
+# S23
+---
+assignment: ws18
+
+compilers:
+  - &c 'gcc $@ -o $@.exec'
+
+files:
+  - file: try_link.c
+    commands: *c
+  - file: try_unlink.c
+    commands: *c
+  - file: try.txt
+  - file: try3.txt

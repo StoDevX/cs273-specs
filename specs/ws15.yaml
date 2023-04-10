@@ -1,0 +1,10 @@
+# S23
+---
+assignment: ws15
+
+compilers:
+  - &c 'gcc $@ -o $@.exec'
+
+files:
+  - file: server.c
+    commands: *c
