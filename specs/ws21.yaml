@@ -1,0 +1,14 @@
+# S23
+---
+assignment: ws21
+
+compilers:
+  - &c 'gcc $@ -o $@.exec'
+
+files:
+  - file: printenv.c
+    commands: *c
+    tests: $@.exec
+  - file: printenv.link
+  - file: printenv.vm_priv
+  - file: printenv.vm_unpriv
