@@ -1,0 +1,13 @@
+# S23
+---
+assignment: lab3
+
+compilers:
+  - &c 'gcc $@ -o $@.exec'
+
+files:
+  - file: sumsqs2.c
+  - file: ls.out
+  - file: ls_home.out
+  - file: first.config
+  - file: ls_boot.out

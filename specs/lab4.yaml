@@ -1,0 +1,15 @@
+# S23
+---
+assignment: lab4
+
+compilers:
+  - &c 'gcc $@ -o $@.exec'
+
+files:
+  - file: lab4.tar
+    options:
+      hide_contents: true
+  - file: lab4-2.tar
+      options:
+      hide_contents: true
+      
