@@ -8,6 +8,14 @@ compilers:
 files:
   - file: sumsqs2.c
   - file: ls.out
+    options:
+      truncate_contents: 5
   - file: ls_home.out
+    options:
+      truncate_contents: 5
   - file: first.config
+    options:
+      truncate_contents: 5
   - file: ls_boot.out
+    options:
+      truncate_contents: 5

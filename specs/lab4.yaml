@@ -10,6 +10,6 @@ files:
     options:
       hide_contents: true
   - file: lab4-2.tar
-      options:
+    options:
       hide_contents: true
       
