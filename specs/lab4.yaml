@@ -7,11 +7,11 @@ compilers:
 
 files:
   - file: lab4.tar
-    tests: tar -tvf $@
+    commands: tar -tvf $@
     options:
-      truncate_contents: 2
+      hide_contents: true
   - file: lab4-2.tar
-    tests: tar -tvf $@
+    commands: tar -tvf $@
     options:
-      truncate_contents: 2
+      hide_contents: true
       
