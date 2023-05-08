@@ -1,0 +1,10 @@
+# S23
+---
+assignment: ws24
+
+compilers:
+  - &c 'gcc $@ -o $@.exec'
+
+files:
+  - file: try_uidgid.c
+    commands: *c
