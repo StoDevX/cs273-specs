@@ -1,0 +1,17 @@
+# S23
+---
+assignment: ws27
+
+compilers:
+  - &c 'gcc $@ -o $@.exec'
+
+files:
+  - file: try_fstat.c
+    commands: *c
+    tests:
+      - ls -l
+      - $@.exec test1.txt
+      - $@.exec $@
+
+inputs:
+  - file: test1.txt
